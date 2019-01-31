@@ -6,9 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NPOI.HSSF.UserModel;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
 using System.Configuration;
 
 namespace ExcelDocTxtTemplateReplace
@@ -236,7 +233,7 @@ namespace ExcelDocTxtTemplateReplace
             AppendLogMsg("开始保存关键字");
             Task.Factory.StartNew(() =>
             {
-                File.WriteAllText(GetKeywordPath(), this.txtKeywords.Text);
+                File.WriteAllText(GetKeywordPath(), this.txtKeywords.Text, Encoding.UTF8);
                 AppendLogMsg("保存关键字成功");
             });
         }

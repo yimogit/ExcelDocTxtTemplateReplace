@@ -1,10 +1,8 @@
 ﻿using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -116,7 +114,7 @@ namespace ExcelDocTxtTemplateReplace
                 {
                     str = new Regex(item.Key).Replace(str, item.Value);
                 }
-                File.WriteAllText(savePath, str, sr.CurrentEncoding);
+                File.WriteAllText(savePath, str, Encoding.Default);
                 return true;
             }
         }

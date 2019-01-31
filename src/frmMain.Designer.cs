@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtPaths = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,11 +39,13 @@
             this.txtLogMsg = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(141, 319);
+            this.button1.Location = new System.Drawing.Point(92, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 5;
@@ -52,28 +53,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 24);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 21);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "需要替换的文件：";
-            // 
             // txtPaths
             // 
-            this.txtPaths.Location = new System.Drawing.Point(144, 21);
+            this.txtPaths.Location = new System.Drawing.Point(92, 56);
             this.txtPaths.Multiline = true;
             this.txtPaths.Name = "txtPaths";
             this.txtPaths.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtPaths.Size = new System.Drawing.Size(297, 99);
+            this.txtPaths.Size = new System.Drawing.Size(407, 111);
             this.txtPaths.TabIndex = 9;
             this.txtPaths.WordWrap = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(447, 21);
+            this.button3.Location = new System.Drawing.Point(92, 21);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 29);
             this.button3.TabIndex = 10;
@@ -84,19 +76,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 144);
+            this.label1.Location = new System.Drawing.Point(12, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 21);
             this.label1.TabIndex = 12;
-            this.label1.Text = "关键字：";
+            this.label1.Text = "模板规则";
             // 
             // txtKeywords
             // 
-            this.txtKeywords.Location = new System.Drawing.Point(141, 144);
+            this.txtKeywords.Location = new System.Drawing.Point(92, 182);
             this.txtKeywords.Multiline = true;
             this.txtKeywords.Name = "txtKeywords";
             this.txtKeywords.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtKeywords.Size = new System.Drawing.Size(393, 141);
+            this.txtKeywords.Size = new System.Drawing.Size(407, 141);
             this.txtKeywords.TabIndex = 13;
             this.txtKeywords.WordWrap = false;
             // 
@@ -106,8 +98,7 @@
             this.lblFileRemark.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblFileRemark.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblFileRemark.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblFileRemark.Location = new System.Drawing.Point(447, 65);
-            this.lblFileRemark.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblFileRemark.Location = new System.Drawing.Point(184, 29);
             this.lblFileRemark.Name = "lblFileRemark";
             this.lblFileRemark.Size = new System.Drawing.Size(92, 17);
             this.lblFileRemark.TabIndex = 15;
@@ -119,7 +110,7 @@
             this.lblKeywordRule.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblKeywordRule.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblKeywordRule.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblKeywordRule.Location = new System.Drawing.Point(141, 288);
+            this.lblKeywordRule.Location = new System.Drawing.Point(92, 333);
             this.lblKeywordRule.Name = "lblKeywordRule";
             this.lblKeywordRule.Size = new System.Drawing.Size(134, 17);
             this.lblKeywordRule.TabIndex = 15;
@@ -127,7 +118,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(219, 319);
+            this.button2.Location = new System.Drawing.Point(170, 364);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 35);
             this.button2.TabIndex = 16;
@@ -137,18 +128,18 @@
             // 
             // txtLogMsg
             // 
-            this.txtLogMsg.Location = new System.Drawing.Point(141, 368);
+            this.txtLogMsg.Location = new System.Drawing.Point(92, 414);
             this.txtLogMsg.Multiline = true;
             this.txtLogMsg.Name = "txtLogMsg";
             this.txtLogMsg.ReadOnly = true;
             this.txtLogMsg.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLogMsg.Size = new System.Drawing.Size(393, 115);
+            this.txtLogMsg.Size = new System.Drawing.Size(407, 115);
             this.txtLogMsg.TabIndex = 17;
             this.txtLogMsg.WordWrap = false;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(328, 319);
+            this.button4.Location = new System.Drawing.Point(279, 364);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 35);
             this.button4.TabIndex = 18;
@@ -158,7 +149,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(450, 319);
+            this.button5.Location = new System.Drawing.Point(401, 364);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(83, 35);
             this.button5.TabIndex = 19;
@@ -166,11 +157,30 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 21);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "文件选择";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 417);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 21);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "操作日志";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 495);
+            this.ClientSize = new System.Drawing.Size(558, 548);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblFileRemark);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -197,7 +207,6 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPaths;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
@@ -208,6 +217,8 @@
         private System.Windows.Forms.TextBox txtLogMsg;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
     }
 }
 

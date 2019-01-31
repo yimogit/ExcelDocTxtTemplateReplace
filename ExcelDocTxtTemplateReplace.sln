@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDocTxtTemplateReplace", "ExcelDocTxtTemplateReplace.csproj", "{67D04618-B23A-4671-85AA-35EB1F381AD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDocTxtTemplateReplace", "./src/ExcelDocTxtTemplateReplace.csproj", "{67D04618-B23A-4671-85AA-35EB1F381AD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
