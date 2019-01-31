@@ -47,9 +47,13 @@ namespace ExcelDocTxtTemplateReplace
                 e.Handled = true;
             }
         }
+        private string GetConfigValue(string key)
+        {
+            return ConfigurationManager.AppSettings == null ? null : ConfigurationManager.AppSettings[key];
+        }
         private string GetSavePath(string name)
         {
-            var newFilePath = Path.Combine(Application.StartupPath, ConfigurationManager.AppSettings.Get("生成文件保存目录") ?? "result");
+            var newFilePath = Path.Combine(Application.StartupPath, GetConfigValue("生成文件保存目录") ?? "result");
 
             if (!Directory.Exists(newFilePath))
             {
@@ -59,7 +63,7 @@ namespace ExcelDocTxtTemplateReplace
         }
         private string GetKeywordPath()
         {
-            var str = ConfigurationManager.AppSettings.Get("关键字保存文本路径");
+            var str = GetConfigValue("关键字保存文本路径");
             return string.IsNullOrWhiteSpace(str) ? "keywords.txt" : str;
         }
         /// <summary>
@@ -68,7 +72,7 @@ namespace ExcelDocTxtTemplateReplace
         /// <returns></returns>
         private string GetFilePathSplitSymbol()
         {
-            var str = ConfigurationManager.AppSettings.Get("路径分隔符");
+            var str = GetConfigValue("路径分隔符");
             return string.IsNullOrWhiteSpace(str) ? Environment.NewLine : str;
         }
         /// <summary>
@@ -77,7 +81,7 @@ namespace ExcelDocTxtTemplateReplace
         /// <returns></returns>
         private string GetReplaceKeywordSymbol()
         {
-            var str = ConfigurationManager.AppSettings.Get("替换关键字分隔符");
+            var str = GetConfigValue("替换关键字分隔符");
             return string.IsNullOrWhiteSpace(str) ? "==" : str;
         }
         /// <summary>
@@ -86,7 +90,7 @@ namespace ExcelDocTxtTemplateReplace
         /// <returns></returns>
         private string GetSupportExts()
         {
-            return ConfigurationManager.AppSettings.Get("支持的文件扩展") ?? "*.*";
+            return GetConfigValue("支持的文件扩展") ?? "*.*";
         }
         /// <summary>
         /// 加载关键字

@@ -13,3 +13,4 @@
 
 ## 下载
 
+https://github.com/yimogit/ExcelDocTxtTemplateReplace/releases
